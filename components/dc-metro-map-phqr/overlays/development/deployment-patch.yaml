@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-phqr
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/release-service-e2e-tenant/appstudio/dc-metro-map-phqr@sha256:9d210d76dab2ddcb4cf4fd6e4c646b69f0115876fd0d61aa45db858dca7de834
+        name: my-nodejs
+        resources: {}
+status: {}
